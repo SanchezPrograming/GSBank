@@ -4,6 +4,10 @@
  */
 package Bank;
 
+import javax.swing.JOptionPane;
+
+
+
 /**
  *
  * @author gussa
@@ -38,12 +42,12 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(51, 51, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icon.png"))); // NOI18N
         jLabel1.setText("jLabel1");
 
-        jLabel2.setBackground(new java.awt.Color(51, 51, 255));
+        jLabel2.setBackground(new java.awt.Color(153, 255, 153));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("GS Bank");
@@ -144,6 +148,8 @@ public class Login extends javax.swing.JFrame {
         if(ContaL.equalsIgnoreCase("1234") && SenhaL.equalsIgnoreCase("1234")){
                dispose();
                new TelaInicial().setVisible(true);
+        }else{
+            JOptionPane.showMessageDialog(null, "Senha Incorreta");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

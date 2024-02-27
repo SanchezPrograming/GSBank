@@ -49,6 +49,11 @@ public class TelaInicial extends javax.swing.JFrame {
         jButton1.setText("DEPOSITAR");
         jButton1.setMaximumSize(new java.awt.Dimension(100, 100));
         jButton1.setMinimumSize(new java.awt.Dimension(100, 100));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(102, 255, 102));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -169,6 +174,11 @@ public class TelaInicial extends javax.swing.JFrame {
              SaldoLb.setText("R$ *******");
          }        
     }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        dispose();
+        new Deposito().setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

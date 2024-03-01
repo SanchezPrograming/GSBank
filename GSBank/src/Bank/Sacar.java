@@ -31,7 +31,6 @@ public class Sacar extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(577, 364));
         setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(153, 255, 153));
